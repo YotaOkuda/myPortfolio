@@ -118,14 +118,26 @@ main {
 }
 
 .container-logo {
-  padding: 30px;
+  padding: 35px;
+  margin-bottom: 20px;
   font-size: 45px;
 }
 
-.age {
-  float: left;
+.personal {
+  padding-bottom: 35px;
 }
 
+.main-profile {
+  padding-top: 20px;
+}
+
+.qualification {
+  padding: 20px;
+}
+
+.mail {
+  padding: 20px;
+}
 
 .state {
   font-size: 20px;
