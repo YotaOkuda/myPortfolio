@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=M+PLUS+1p"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas id="webgl"></canvas>
+    
+    <header>
+      <div class="header-logo">
+        <a href="#home-wrapper">Yota's PORTFOLIO</a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#home-wrapper">Home</a></li>
+          <li><a href="#profile-wrapper">Profile</a></li>
+          <li><a href="#works-wrapper">Works</a></li>
+          <li><a href="#skills-wrapper">Skills</a></li>
+          <!-- <li><a href="#contact-wrapper">Contact</a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="home-wrapper" class="wrapper home-wrapper">
+        <div class="home-container">
+          <h2>Hello World!!</h2>
+        </div>
+      </div>
+
+      <div id="profile-wrapper" class="wrapper profile-wrapper">
+        <div class="container">
+          <div class="mini-container">
+            <h3 class="container-logo">Profile</h3>
+            <div class="profile-state">
+              <h2>Okuda Yota（奥田 陽太）</h2>
+              <div class="personal">
+                <p class="age"><i class="fa-solid fa-person"></i>AGE:23</p>
+                <p class="from"><i class="fa-solid fa-location-dot"></i>Japan Toyama</p>
+              </div>
+              <p>茨城県出身の理系大学生</p>
+              <p>高専で情報工学を学び、現在大学では医工学を専攻しています。</p>
+              <p>趣味はサイクリングで,、BianchiのC-SPORT 2に乗っています。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="works-wrapper" class="wrapper works-wrapper">
+        <div class="container">
+          <div class="mini-container">
+            <h3 class="container-logo">Works</h3>
+          </div>
+          
+        </div>
+      </div>
+
+      <div id="skills-wrapper" class="wrapper skills-wrapper">
+        <div class="container">
+          <div class="mini-container">
+            <h3 class="container-logo">My skill set</h3>
+            <p class="state">今までに学んだ技術スタックを掲載しています。</p>
+            <p class="level">( 5-God, 4-Legend, 3-Pro, 2-Amateur, 1-Newbie )</p>
+            
+            <div class="language">
+              <div class="language-logo">Front-end</div>
+              <ul>
+                <li><i class="fa-brands fa-html5 fa-lg"></i>HTML/CSS<span>-2</span></li>
+                <li><i class="fa-brands fa-js fa-lg"></i>JavaScript<span>-2</span></li>
+                <li><i class="fa-brands fa-vuejs fa-lg"></i>Vue.js<span>-2</span></li>
+                <li>three.js<span>-1</span></li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="language">
+              <div class="language-logo">Back-end</div>
+              <ul>
+                <li><i class="fa-brands fa-python fa-lg"></i>Pyhon<span>-3</span></li>
+                <li>C<span>-2</span></li>
+                <li>MySQL<span>-2</span></li>
+                <li><i class="fa-brands fa-node-js fa-lg"></i>Node.js<span>-1</span></li>
+                <li>Rubu on Rails<span>-1</span></li>
+                <li><i class="fa-brands fa-r-project fa-lg"></i>R<span>-1</span></li>
+              </ul>
+            </div>
+            <div class="language">
+              <div class="language-logo">DevOps</div>
+              <ul>
+                <li><i class="fa-brands fa-git-alt fa-lg"></i>Git/Github<span>-1</span></li>
+                <li><i class="fa-brands fa-docker fa-lg"></i>Docker<span>-1</span></li>
+                <li><i class="fa-brands fa-aws fa-lg"></i>AWS<span>-1</span></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div id="contact-wrapper" class="wrapper contact-wrapper">
+        <div class="container">
+          <div class="mini-container">
+            <h3 class="container-logo">Contact</h3>
+          </div>
+        </div>
+      </div> -->
+      
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
