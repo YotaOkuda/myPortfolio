@@ -8,4 +8,5 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 使い方
-1.ローカル環境にクローン　　2.myPortfolioフォルダ上でnpm install  3.npm run devを実行  4.ローカルホストでサイトが立ち上がる
+*ローカル環境にクローン
+*myPortfolioフォルダ上でnpm install  3.npm run devを実行  4.ローカルホストでサイトが立ち上がる
