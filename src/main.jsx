@@ -118,8 +118,8 @@ const tick = () => {
   
 
   //カメラワーク
-  camera.position.x = Math.cos(elapsedTime * 0.3) * 7;
-  camera.position.z = Math.sin(elapsedTime * 0.3) * 7;
+  camera.position.x = Math.cos(elapsedTime * 0.25) * 7;
+  camera.position.z = Math.sin(elapsedTime * 0.25) * 7;
 
   controls.update();
   renderer.render(scene, camera);

@@ -25,7 +25,7 @@
           <li><a href="#profile-wrapper">Profile</a></li>
           <li><a href="#works-wrapper">Works</a></li>
           <li><a href="#skills-wrapper">Skills</a></li>
-          <!-- <li><a href="#contact-wrapper">Contact</a></li> -->
+          <li><a href="#contact-wrapper">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -42,9 +42,12 @@
           <div class="mini-container">
             <h3 class="container-logo">Profile</h3>
             <div class="profile-state">
-              <h2>Okuda Yota（奥田 陽太）</h2>
+              <h1>Okuda Yota（奥田 陽太）</h1>
               <div class="personal">
-                <p class="from"><i class="fa-solid fa-location-dot"></i>Japan Toyama</p>
+                <h4 class="from"><i class="fa-solid fa-location-dot"></i>Japan Toyama</h4>
+                <p>データサイエンス/MLエンジニア</p>
+                <p>富山大学 医薬理工学環 メディカルデザインプログラム 博士前期課程１年</p>
+                <p>人間情報学研究室所属</p>
               </div>
               <div class="main-profile state">
                 <p>茨城県出身の理系大学院生</p>
@@ -59,7 +62,6 @@
                 <p>趣味はサイクリングで、BianchiのC-SPORT 2に乗っています。</p>
                 <p class="qualification">保有資格：TOEIC L&R 725点、基本情報技術者</p>
               </div>
-              <div class="mail">E-mail : yotaai200@gmail.com</div>
             </div>
           </div>
         </div>
@@ -69,9 +71,53 @@
         <div class="container">
           <div class="mini-container">
             <h3 class="container-logo">Works</h3>
-            <p style="font-size: 24px;">
-              My Github Link : <a href="https://github.com/YotaOkuda" target="_blank" rel="noopener noreferrer">https://github.com/YotaOkuda</a>
-            </p>
+            <div class="product-section">
+              <img src="portfolio_sc.png" alt="成果物1" class="product-image">
+              <div class="product-details">
+                  <h2>Yota's PORTFOLIO</h2>
+                  <p>
+                      本サイトです。webGLを用いた背景アニメーションを実装しました。<br>
+                      レスポンシブ対応やユーザビリティを意識したデザインなど、まだまだ改良すべきところが多いですが、引き続き更新していきます。
+                  </p>
+                  <a href="https://skillicons.dev">
+                    <img src="https://skillicons.dev/icons?i=html,css,js,vite" />
+                  </a>
+                  <div class="button05">
+                    <a href="https://github.com/YotaOkuda/myPortfolio"><i class="fa-brands fa-github fa-2x"></i>Github</a>
+                  </div>
+              </div>
+            </div>
+            <div class="product-section">
+              <img src="atcoder.png" alt="成果物1" class="product-image">
+              <div class="product-details">
+                  <h2>競技プログラミングの記録</h2>
+                  <p>
+                      技術力やアルゴリズム的思考を身に着けるために取り組んでいます。 <br>
+                      継続は力なりということで、なるべく１日１問解くようにしています
+                  </p>
+                  <a href="https://skillicons.dev">
+                    <img src="https://skillicons.dev/icons?i=python" />
+                  </a>
+                  <div class="button05">
+                    <a href="https://github.com/YotaOkuda/atcoder"><i class="fa-brands fa-github fa-2x"></i>Github</a>
+                  </div>
+              </div>
+            </div>
+            <div class="product-section">
+              <img src="atcoder.png" alt="成果物1" class="product-image">
+              <div class="product-details">
+                  <h2>料理提案BOT</h2>
+                  <p>
+                      lineのチャット画面で食材の画像を送信すると、機械学習で食材を判断し、その食材を使用したレシピをいくつか提案してくれるチャットボットです。コア技術としてawsのrekognitionとlambdaを用いています。
+                  </p>
+                  <a href="https://skillicons.dev">
+                    <img src="https://skillicons.dev/icons?i=aws,python" />
+                  </a>
+                  <div class="button05">
+                    <a href="https://github.com/YotaOkuda"><i class="fa-brands fa-github fa-2x"></i>Github</a>
+                  </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -79,57 +125,57 @@
       <div id="skills-wrapper" class="wrapper skills-wrapper">
         <div class="container">
           <div class="mini-container">
-            <h3 class="container-logo">My skill set</h3>
-            <p class="state">今までに学んだ技術スタックを掲載しています。</p>
-            <p class="level">Level( 5-God, 4-Legend, 3-Pro, 2-Amateur, 1-Newbie )</p>
-            
-            <div class="language">
-              <div class="language-logo">Front-end</div>
-              <ul>
-                <li><i class="fa-brands fa-html5 fa-lg"></i>HTML/CSS<span>-2</span></li>
-                <li><i class="fa-brands fa-js fa-lg"></i>JavaScript<span>-2</span></li>
-                <li><i class="fa-brands fa-vuejs fa-lg"></i>Vue.js<span>-2</span></li>
-                <li>three.js<span>-1</span></li>
-                <li></li>
-              </ul>
-            </div>
-            <div class="language">
-              <div class="language-logo">Back-end</div>
-              <ul>
-                <li><i class="fa-brands fa-python fa-lg"></i>Pyhon<span>-3</span></li>
-                <li>C<span>-2</span></li>
-                <li>MySQL<span>-2</span></li>
-                <li><i class="fa-brands fa-node-js fa-lg"></i>Node.js<span>-1</span></li>
-                <li>Rubu on Rails<span>-1</span></li>
-                <li><i class="fa-brands fa-r-project fa-lg"></i>R<span>-1</span></li>
-              </ul>
-            </div>
-            <div class="language">
-              <div class="language-logo">DevOps</div>
-              <ul>
-                <li><i class="fa-brands fa-git-alt fa-lg"></i>Git/Github<span>-1</span></li>
-                <li><i class="fa-brands fa-docker fa-lg"></i>Docker<span>-1</span></li>
-                <li><i class="fa-brands fa-aws fa-lg"></i>AWS<span>-1</span></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
+            <h3 class="container-logo">Skills</h3>
+              <div class="skills-container">
+                  <div class="skills-section">
+                      <h3>frontend</h3>
+                      <div class="skill">
+                        <p align="center">
+                          <a href="https://skillicons.dev">
+                            <img src="https://skillicons.dev/icons?i=html,css,js,ts,vue,vite" />
+                          </a>
+                        </p>
+                      </div>
+                  </div>
+                  <div class="skills-section">
+                      <h3>backend</h3>
+                      <p align="center">
+                        <a href="https://skillicons.dev">
+                          <img src="https://skillicons.dev/icons?i=c,python,sklearn,pytorch,r" />
+                        </a>
+                      </p>
+                  </div>
+                  <div class="skills-section">
+                      <h3>other</h3>
+                      <p align="center">
+                        <a href="https://skillicons.dev">
+                          <img src="https://skillicons.dev/icons?i=git,github,aws,anaconda,linux,vscode,notion" />
+                        </a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div id="contact-wrapper" class="contact-fotter">
+        <h3 class="container-logo">Contact</h3>
+        <div class="button-container">
+          <div class="button05">
+            <a href="mailto:yotaai200@gmail.com?"><i class="fa-solid fa-envelope fa-2x"></i>Gmail</a>
+          </div>
+          <div class="button05">
+            <a href="https://github.com/YotaOkuda"><i class="fa-brands fa-github fa-2x"></i>Github</a>
           </div>
         </div>
       </div>
-
-      <!-- <div id="contact-wrapper" class="wrapper contact-wrapper">
-        <div class="container">
-          <div class="mini-container">
-            <h3 class="container-logo">Contact</h3>
-          </div>
-        </div>
-      </div> -->
       
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

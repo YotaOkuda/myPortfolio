@@ -109,8 +109,13 @@ main {
 .container {
   width: 80%;
   height: 700px;
-  background-color: rgb(24 35 2 / 0.27);
+  #background-color: rgb(24 35 2 / 0.27);
   border-radius: 25px;
+}
+
+.works-wrapper,.container{
+  height: 800px;
+  margin-bottom: 1000px;
 }
 
 .mini-container {
@@ -120,11 +125,21 @@ main {
 .container-logo {
   padding: 35px;
   margin-bottom: 20px;
-  font-size: 45px;
+  font-size: 60px;
 }
 
 .personal {
   padding-bottom: 35px;
+}
+
+.from {
+  line-height: 1.5; /* 行間を1.5倍に設定 */
+  font-size: 1.5em; /* 文字サイズを1.5倍に設定 */
+}
+
+.personal p {
+  line-height: 1.8; /* 行間を1.5倍に設定 */
+  font-size: 16px;
 }
 
 .main-profile {
@@ -174,3 +189,138 @@ main {
 .fa-brands {
   padding-right: 8px;
 }
+
+.product-section {
+  display: flex;
+  align-items: center;
+  background-color: #f5f0f0;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.product-image {
+  width: 40%;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.product-details {
+  width: 60%;
+}
+
+.product-details h2 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.product-details p {
+  margin: 10px 0;
+  line-height: 1.5;
+  color: #333;
+}
+
+.product-details,.button05 {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .product-section {
+      flex-direction: column;
+  }
+
+  .product-image {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .product-details {
+      width: 100%;
+  }
+}
+
+.skills-wrapper {
+  text-align: center;
+  padding: 50px;
+  height: 300px;
+}
+
+.skills-container {
+  #display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.skills-section h3 {
+  font-size: 35px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.skill {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 20px 0;
+}
+
+.contact-fotter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.button-conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button05 {
+  display: inline-block;
+  overflow: hidden;
+  margin:  20px;
+}
+
+.button05 a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1em 2em;
+  width: 300px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #cccccc;
+  box-shadow: 0 5px 0 #aaaaaa;
+  transition: 0.3s;
+}
+
+.button05 a::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #333333;
+  border-right: 3px solid #333333;
+  transform: rotate(45deg);
+}
+
+.button05 a:hover {
+  transform: translateY(3px);
+  text-decoration: none;
+  box-shadow: 0 2px 0 #aaaaaa;
+}
+
