@@ -24,8 +24,9 @@ header {
   justify-content: space-around;
   color: white;
   padding: 40px;
-  background-color: rgb(24 35 2 / 0.25);
-  z-index: 10;
+  background-color: rgb(0, 0, 0, 0);
+  z-index: 50;
+  position: sticky;
 }
 
 .header-logo a {
@@ -324,3 +325,97 @@ main {
   box-shadow: 0 2px 0 #aaaaaa;
 }
 
+/* タブレット対応 (幅が768px以下) */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+
+  .home-wrapper {
+    font-size: 60px;
+  }
+
+  .product-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .product-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .product-details {
+    width: 100%;
+  }
+
+  .skills-wrapper {
+    padding: 30px;
+    height: auto;
+  }
+
+  .skills-section {
+    margin: 15px;
+  }
+
+  .contact-fotter {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .button05 a {
+    width: 200px;
+  }
+}
+
+/* スマホ対応 (幅が480px以下) */
+@media screen and (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  header nav ul li {
+    margin: 5px 0;
+  }
+
+  .home-wrapper {
+    font-size: 40px;
+  }
+
+  .profile-wrapper, .works-wrapper, .skills-wrapper, .contact-wrapper {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .container {
+    width: 90%;
+    height: auto;
+  }
+
+  .product-section {
+    padding: 15px;
+  }
+
+  .skills-section h3 {
+    font-size: 28px;
+  }
+
+  .button05 a {
+    width: 150px;
+    padding: 0.8em 1.5em;
+    font-size: 16px;
+  }
+}
