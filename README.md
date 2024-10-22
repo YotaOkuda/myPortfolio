@@ -1,8 +1,16 @@
-# React + Vite
+# Yota's PORTFOLIO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![ポートフォリオ画像](/public/portfolio_sc.png)
 
-Currently, two official plugins are available:
+<br>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 説明
+自身のポートフォリオサイトを作成しました。webアプリケーションの開発に興味があり、まずは静的サイトから構築してみようというのが制作のきっかけです。  
+静的サイトとはいっても見た目にインパクトがあり、かつアニメーション的なのがついていたらいいなとデザインを考えていました。そんなところThreejsを見つけ、モダンなサイトが作成できるということで採用しました。
+
+レスポンシブ対応やユーザビリティを意識したデザインなど、引き続き更新していく予定です。
+
+<br>
+
+## スキル
+<img src="https://skillicons.dev/icons?i=html,css,js,react,vite" />
