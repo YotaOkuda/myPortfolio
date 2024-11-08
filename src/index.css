@@ -78,7 +78,7 @@ main {
   width: 100%;
 }
 
-.home-wrapper  
+.home-wrapper  {
   font-size: 100px;
   white-space: nowrap;
 }
