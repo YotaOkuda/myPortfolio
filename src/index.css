@@ -89,6 +89,12 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 50px 0; /* 一貫したパディングを追加 */
+  margin-bottom: 50px; /* 必要に応じて一貫したマージンを追加 */
+}
+
+.profile-wrapper, .works-wrapper, .skills-wrapper {
+  padding: 50px 0; /* 全てのラッパーに同じパディングを適用 */
 }
 
 .profile-wrapper h3{
@@ -109,15 +115,12 @@ main {
 
 .container {
   width: 80%;
-  height: 700px;
-  #background-color: rgb(24 35 2 / 0.27);
+  height: auto;
+  background-color: rgb(24 35 2 / 0.27);
   border-radius: 25px;
+  margin-bottom: 50px; /* コンテナに一貫したマージンを追加 */
 }
 
-.works-wrapper,.container{
-  height: 800px;
-  margin-bottom: 1000px;
-}
 
 .mini-container {
   text-align: center;
@@ -193,22 +196,27 @@ main {
 
 .product-section {
   display: flex;
+  flex-direction: row; /* デフォルトで横並び */
   align-items: center;
+  justify-content: center; /* 横並びで中央揃え */
   background-color: #f5f0f0;
   border-radius: 10px;
-  margin-bottom: 100px;
+  margin: 30px auto 80px auto;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  width: 90%;
 }
 
 .product-image {
   width: 40%;
+  max-width: 500px;
   border-radius: 10px;
   margin-right: 20px;
 }
 
 .product-details {
   width: 60%;
+  text-align: center;
 }
 
 .product-details h2 {
@@ -228,21 +236,6 @@ main {
   flex-direction: column;
 }
 
-@media screen and (max-width: 768px) {
-  .product-section {
-      flex-direction: column;
-  }
-
-  .product-image {
-      width: 100%;
-      margin-bottom: 20px;
-  }
-
-  .product-details {
-      width: 100%;
-  }
-}
-
 .skills-wrapper {
   text-align: center;
   padding: 50px;
@@ -250,7 +243,6 @@ main {
 }
 
 .skills-container {
-  #display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -260,19 +252,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+  margin: 30px;
 }
 
 .skills-section h3 {
   font-size: 35px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   color: white;
-}
-
-.skill {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0 20px 0;
 }
 
 .contact-fotter {
@@ -335,12 +321,14 @@ main {
 
   header nav ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center; /* 中央揃え */
     align-items: center;
+    flex-wrap: wrap; /* 必要に応じて折り返しを許可 */
   }
 
   header nav ul li {
-    margin: 10px 0;
+    margin: 10px;
   }
 
   .home-wrapper {
@@ -349,13 +337,15 @@ main {
 
   .product-section {
     flex-direction: column;
-    text-align: center;
-    padding: 20px;
+    align-items: center; /* 中央に配置 */
+    padding: 30px;
+    width: 95%; /* コンテナ幅を調整して余白を確保 */
   }
 
   .product-image {
-    width: 100%;
-    margin-bottom: 20px;
+    width: 95%; /* 幅を調整して大きく表示 */
+    margin-bottom: 20px; /* 画像下にスペースを設定 */
+    margin-right: 0; /* 横の余白を削除 */
   }
 
   .product-details {
@@ -387,8 +377,17 @@ main {
     padding: 10px;
   }
 
+  header nav ul {
+    display: flex; /* フレックスボックスで横に並べる */
+    flex-direction: row; /* 横並びに設定 */
+    justify-content: center; /* 中央揃え */
+    align-items: center;
+    flex-wrap: wrap; /* 必要に応じて折り返しを許可 */
+  }
+
+
   header nav ul li {
-    margin: 5px 0;
+    margin: 5px;
   }
 
   .home-wrapper {
@@ -406,7 +405,21 @@ main {
   }
 
   .product-section {
-    padding: 15px;
+    flex-direction: column;
+    align-items: center; /* 中央に配置 */
+    padding: 30px;
+    width: 95%; /* コンテナ幅を調整して余白を確保 */
+  }
+
+  .product-image {
+    width: 100%; /* スマホ画面に合わせて大きめに表示 */
+    margin-bottom: 15px;
+    margin-right: 0; /* 余分な横のマージンを削除 */
+  }
+
+  .product-details {
+    width: 100%; /* テキスト領域も全幅で設定 */
+    padding: 10px; /* スマホでの見やすさのために少し余白を追加 */
   }
 
   .skills-section h3 {
