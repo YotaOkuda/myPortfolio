@@ -78,8 +78,7 @@ main {
   width: 100%;
 }
 
-.home-wrapper  {
-
+.home-wrapper  
   font-size: 100px;
   white-space: nowrap;
 }
@@ -116,7 +115,6 @@ main {
 .container {
   width: 80%;
   height: auto;
-  background-color: rgb(24 35 2 / 0.27);
   border-radius: 25px;
   margin-bottom: 50px; /* コンテナに一貫したマージンを追加 */
 }
